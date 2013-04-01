@@ -33,3 +33,27 @@ github "sudo",     "1.0.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+github "osx",                 "1.0.0"
+github "java",                "1.0.6"
+github "zsh",                 "1.0.0"
+github "property_list_key",   "0.1.0", :repo => "glarizza/puppet-property_list_key"
+
+# apps
+github "alfred",          "1.0.1b", :repo => "pacso/puppet-alfred"
+github "chrome",          "1.1.0"
+github "firefox",         "1.0.5"
+github "iterm2",          "1.0.2"
+github "sublime_text_2",  "1.1.0"
+github "intellij",        "1.1.2"
+github "rubymine",        "1.0.1"
+github "dropbox",         "1.1.0"
+github "adium",           "1.0.1"
+github "vmware_fusion",   "1.0.0"
+github "divvy",           "1.0.1"
+github "mou",             "1.0.0"
+github "vlc",             "1.0.0"
+github "pow",             "0.1.0", :repo => "redbubble/puppet-pow"
+github "sequel_pro",      "1.0.0", :repo => "am/puppet-sequelpro"
+github "skype",           "1.0.2"
+github "tower",           "0.0.1", :repo => "am/puppet-tower"
