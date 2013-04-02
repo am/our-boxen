@@ -1,6 +1,6 @@
 class people::am::applications {
   include iterm2::dev
-
+  include vagrant
   include java
 
   include alfred
