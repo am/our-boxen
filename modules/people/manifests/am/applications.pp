@@ -17,9 +17,9 @@ class people::am::applications {
   }
   include mou
 
-  include pow
   include sequel_pro
   include vmware_fusion
   include tower
 
+  # include pow
 }
