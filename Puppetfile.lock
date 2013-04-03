@@ -1,9 +1,4 @@
 GITHUBTARBALL
-  remote: am/puppet-sequelpro
-  specs:
-    sequel_pro (1.0.0)
-
-GITHUBTARBALL
   remote: am/puppet-tower
   specs:
     tower (0.0.1)
@@ -114,6 +109,11 @@ GITHUBTARBALL
     rubymine (1.0.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-sequel_pro
+  specs:
+    sequel_pro (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-skype
   specs:
     skype (1.0.2)
@@ -131,7 +131,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
-    vagrant (2.0.3)
+    vagrant (2.0.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-vlc
@@ -205,7 +205,7 @@ DEPENDENCIES
   sublime_text_2 (= 1.1.0)
   sudo (= 1.0.0)
   tower (= 0.0.1)
-  vagrant (= 2.0.3)
+  vagrant (= 2.0.5)
   vlc (= 1.0.0)
   vmware_fusion (= 1.0.0)
   zsh (= 1.0.0)
