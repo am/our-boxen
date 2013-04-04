@@ -51,6 +51,7 @@ class people::am::repositories (
 
   repository { "${my_sourcedir}/oh-my-zsh":
     source  => 'robbyrussell/oh-my-zsh',
+    provider => 'git';
   }
 
   file { "/Users/${my_username}/.oh-my-zsh":
@@ -61,6 +62,7 @@ class people::am::repositories (
 
   repository { "${my_sourcedir}/dotfiles":
     source  => 'am/dotfiles',
+    provider => 'git';
   }
 
   file { "/Users/${my_username}/.zshrc":
