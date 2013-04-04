@@ -66,7 +66,7 @@ class people::am::repositories (
   file { "/Users/${my_username}/.zshrc":
     ensure  => link,
     mode    => '0644',
-    target  => "${my_sourcedir}/dotfiles/zshrc",
+    target  => "${my_sourcedir}/dotfiles/.zshrc",
     require => Repository["${my_sourcedir}/dotfiles"],
   }
 
@@ -75,7 +75,21 @@ class people::am::repositories (
     force   => true,     
     replace => true,
     mode    => '0644',
-    target  => "${my_sourcedir}/dotfiles/oh-my-zsh",
+    target  => "${my_sourcedir}/dotfiles/.oh-my-zsh",
+    require => Repository["${my_sourcedir}/dotfiles"],
+  }
+
+  file { "/Users/${my_username}/.slate":
+    ensure  => link,
+    mode    => '0644',
+    target  => "${my_sourcedir}/dotfiles/.slate",
+    require => Repository["${my_sourcedir}/dotfiles"],
+  }
+
+  file { "/Users/${my_username}/.slate.js":
+    ensure  => link,
+    mode    => '0644',
+    target  => "${my_sourcedir}/dotfiles/.slate.js",
     require => Repository["${my_sourcedir}/dotfiles"],
   }
 }
