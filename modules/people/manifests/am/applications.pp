@@ -7,6 +7,7 @@ class people::am::applications {
   include dropbox
   include adium
   include skype
+  include slate
   
   include chrome
   include firefox
@@ -21,5 +22,4 @@ class people::am::applications {
   include vmware_fusion
   include tower
 
-  # include pow
 }
