@@ -62,7 +62,7 @@ class people::am::repositories (
 
   repository { "${my_sourcedir}/dotfiles":
     source  => 'am/dotfiles',
-    provider => 'git';
+    provider => 'git';  
   }
 
   file { "/Users/${my_username}/.zshrc":

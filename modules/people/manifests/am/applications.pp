@@ -8,6 +8,7 @@ class people::am::applications {
   include adium
   include skype
   include slate
+  include twitterrific
   
   include chrome
   include firefox
@@ -20,6 +21,7 @@ class people::am::applications {
 
   include sequel_pro
   include vmware_fusion
-  include tower
+  # include tower
+  include sourcetree
 
 }
