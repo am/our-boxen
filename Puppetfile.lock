@@ -1,3 +1,8 @@
+PATH
+  remote: /Volumes/Data/systems/boxen/puppet-flashplayer
+  specs:
+    flashplayer (0.0.1)
+
 GITHUBTARBALL
   remote: am/puppet-tower
   specs:
@@ -12,6 +17,11 @@ GITHUBTARBALL
   remote: boxen/puppet-adium
   specs:
     adium (1.1.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-alfred
+  specs:
+    alfred (1.0.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-boxen
@@ -144,14 +154,14 @@ GITHUBTARBALL
     sudo (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-transmission
+  specs:
+    transmission (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
     vagrant (2.0.5)
-
-GITHUBTARBALL
-  remote: boxen/puppet-vlc
-  specs:
-    vlc (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-vmware_fusion
@@ -174,14 +184,14 @@ GITHUBTARBALL
     property_list_key (0.1.0)
 
 GITHUBTARBALL
+  remote: goofansu/puppet-vlc
+  specs:
+    vlc (1.0.0)
+
+GITHUBTARBALL
   remote: jlgeering/puppet-sourcetree
   specs:
     sourcetree (0.0.2)
-
-GITHUBTARBALL
-  remote: pacso/puppet-alfred
-  specs:
-    alfred (1.0.1b)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
@@ -193,15 +203,21 @@ GITHUBTARBALL
   specs:
     pow (0.1.0)
 
+GITHUBTARBALL
+  remote: singuerinc/puppet-teamviewer
+  specs:
+    teamviewer (1.0.1)
+
 DEPENDENCIES
   adium (= 1.1.0)
-  alfred (= 1.0.1b)
+  alfred (= 1.0.2)
   boxen (= 2.0.0)
   chrome (= 1.1.0)
   divvy (= 1.0.1)
   dnsmasq (= 1.0.0)
   dropbox (= 1.1.0)
   firefox (= 1.0.5)
+  flashplayer (>= 0)
   gcc (= 1.0.0)
   git (= 1.0.0)
   homebrew (= 1.1.2)
@@ -227,7 +243,9 @@ DEPENDENCIES
   stdlib (= 3.0.0)
   sublime_text_2 (= 1.1.0)
   sudo (= 1.0.0)
+  teamviewer (= 1.0.1)
   tower (= 0.0.1)
+  transmission (= 1.0.0)
   twitterrific (= 0.0.1)
   vagrant (= 2.0.5)
   vlc (= 1.0.0)

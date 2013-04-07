@@ -9,6 +9,9 @@ class people::am::applications {
   include skype
   include slate
   include twitterrific
+  include teamviewer
+  include transmission
+  include vlc
   
   include chrome
   include firefox
@@ -21,7 +24,6 @@ class people::am::applications {
 
   include sequel_pro
   include vmware_fusion
-  # include tower
   include sourcetree
 
 }
