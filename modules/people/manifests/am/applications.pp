@@ -5,6 +5,7 @@ class people::am::applications {
 
   include alfred
   include dropbox
+  include googledrive
   include adium
   include skype
   include slate
