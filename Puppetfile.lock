@@ -56,7 +56,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-git
   specs:
-    git (1.0.0)
+    git (1.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-googledrive
@@ -101,12 +101,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
-    nodejs (1.1.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-nvm
-  specs:
-    nvm (1.0.0)
+    nodejs (2.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-osx
@@ -218,7 +213,7 @@ DEPENDENCIES
   dropbox (= 1.1.0)
   firefox (= 1.0.5)
   gcc (= 1.0.0)
-  git (= 1.0.0)
+  git (= 1.1.0)
   googledrive (= 1.0.1)
   homebrew (= 1.1.2)
   hub (= 1.0.0)
@@ -228,8 +223,7 @@ DEPENDENCIES
   java (= 1.0.6)
   mou (= 1.0.0)
   nginx (= 1.2.0)
-  nodejs (= 1.1.0)
-  nvm (= 1.0.0)
+  nodejs (= 2.1.0)
   osx (= 1.0.0)
   pow (= 0.1.0)
   property_list_key (= 0.1.0)
