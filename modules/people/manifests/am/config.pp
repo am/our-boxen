@@ -59,4 +59,45 @@ class people::am::config (
     key    => 'enabled',
     value  => 'no',
   }
+
+  exec { "set_computer_name":
+    command => "scutil --set ComputerName 'am'",
+    path    => "/usr/sbin/",
+    user => root,
+  }
+
+  exec { "no_close_window_animation":
+    command => "defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false",
+    path    => "/usr/bin/",
+  }
+
+  exec { "expand_save_panel":
+    command => "defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true",
+    path    => "/usr/bin/",
+  }
+
+  # Use list view in all Finder windows by default
+  # Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
+  exec { "finder_list_view":
+    command => 'defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"',
+    path    => "/usr/bin/",
+  }
+
+  # Show the ~/Library folder
+  exec { "finder_show_library":
+    command => 'chflags nohidden ~/Library',
+    path    => "/usr/bin/",
+  }
+
+  # Don’t animate opening applications from the Dock
+  exec { "dock_no_animation":
+    command => 'defaults write com.apple.dock launchanim -bool false',
+    path    => "/usr/bin/",
+  }
+
+  # Automatically hide and show the Dock
+  exec { "dock_hide_show":
+    command => 'defaults write com.apple.dock autohide -bool true',
+    path    => "/usr/bin/",
+  }
 }
