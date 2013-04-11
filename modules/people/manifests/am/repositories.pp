@@ -49,6 +49,7 @@ class people::am::repositories (
     value => 'diff --cached HEAD^',
   }
 
+  # oh-my-zsh
   repository { "${my_sourcedir}/oh-my-zsh":
     source  => 'robbyrussell/oh-my-zsh',
     provider => 'git';
@@ -60,6 +61,24 @@ class people::am::repositories (
     require => Repository["${my_sourcedir}/oh-my-zsh"],
   }
 
+  # vim theme - chriskempson/tomorrow-theme
+  repository { "${my_sourcedir}/tomorrow-theme":
+    source  => 'chriskempson/tomorrow-theme',
+    provider => 'git';
+  }
+
+  # create colors folder
+  file { "/Users/${my_username}/.vim/colors":
+      ensure => "directory",
+  }
+
+  file { "/Users/${my_username}/.vim/colors/Tomorrow-Night.vim":
+    ensure  => link,
+    target  => "${my_sourcedir}/tomorrow-theme/vim/colors/Tomorrow-Night.vim",
+    require => Repository["${my_sourcedir}/tomorrow-theme"],
+  }
+
+  # dotfiles
   repository { "${my_sourcedir}/dotfiles":
     source  => 'am/dotfiles',
     provider => 'git';  
@@ -69,6 +88,13 @@ class people::am::repositories (
     ensure  => link,
     mode    => '0644',
     target  => "${my_sourcedir}/dotfiles/.zshrc",
+    require => Repository["${my_sourcedir}/dotfiles"],
+  }
+
+  file { "/Users/${my_username}/.vimrc":
+    ensure  => link,
+    mode    => '0644',
+    target  => "${my_sourcedir}/dotfiles/.vimrc",
     require => Repository["${my_sourcedir}/dotfiles"],
   }
 
