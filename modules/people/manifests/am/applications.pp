@@ -3,6 +3,7 @@ class people::am::applications {
   include vagrant
   include java
   include vim
+  include autojump
 
   include alfred
   include dropbox
