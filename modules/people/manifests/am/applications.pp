@@ -15,6 +15,7 @@ class people::am::applications {
   include teamviewer
   include transmission
   include vlc
+  include rdio
   
   include chrome
   include firefox
