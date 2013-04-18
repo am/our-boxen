@@ -174,6 +174,11 @@ GITHUBTARBALL
     vim (1.0.3)
 
 GITHUBTARBALL
+  remote: boxen/puppet-virtualbox
+  specs:
+    virtualbox (1.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-vmware_fusion
   specs:
     vmware_fusion (1.0.0)
@@ -260,6 +265,7 @@ DEPENDENCIES
   twitterrific (= 0.0.1)
   vagrant (= 2.0.6)
   vim (= 1.0.3)
+  virtualbox (= 1.0.2)
   vlc (= 1.0.0)
   vmware_fusion (= 1.0.0)
   zsh (= 1.0.0)

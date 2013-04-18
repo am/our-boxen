@@ -28,6 +28,7 @@ class people::am::applications {
 
   include sequel_pro
   include vmware_fusion
+  include virtualbox
   include sourcetree
 
 }
