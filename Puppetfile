@@ -13,12 +13,12 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "1.1.1"
+github "boxen", "1.3.2"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
 
-github "repository", "2.0.0"
+github "repository", "2.0.2"
 github "dnsmasq",    "1.0.0"
 github "gcc",        "1.0.0"
 github "git",        "1.1.0"
@@ -27,7 +27,7 @@ github "hub",        "1.0.0"
 github "inifile",    "0.9.0", :repo => "cprice-puppet/puppetlabs-inifile"
 github "nginx",      "1.3.0"
 github "nodejs",     "2.1.0"
-github "ruby",       "3.5.0"
+github "ruby",       "3.6.1"
 github "stdlib",     "3.0.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "1.0.0"
 
@@ -65,6 +65,6 @@ github "twitterrific",        "0.0.1", :repo => "am/puppet-twitterrific"
 github "sourcetree",          "0.0.2", :repo => "jlgeering/puppet-sourcetree"
 github "teamviewer",          "1.0.1", :repo => "singuerinc/puppet-teamviewer"
 github "transmission",        "1.0.0"
-github "googledrive",         "1.0.1"
+github "googledrive",         "1.0.2"
 github "autojump",            "1.0.0"
 github "rdio",                "1.0.0"
