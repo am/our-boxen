@@ -41,7 +41,7 @@ github "property_list_key",   "0.1.0", :repo => "glarizza/puppet-property_list_k
 github "vim",                 "1.0.3"
 
 # apps
-github "alfred",              "1.0.2"
+github "alfred",              "1.0.3", :repo => "sankage/puppet-alfred"
 github "chrome",              "1.1.0"
 github "firefox",             "1.0.5"
 github "iterm2",              "1.0.2"
