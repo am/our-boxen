@@ -30,5 +30,6 @@ class people::am::applications {
   include vmware_fusion
   include virtualbox
   include sourcetree
+  include archiver
 
 }
