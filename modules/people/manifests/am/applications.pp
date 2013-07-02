@@ -1,4 +1,9 @@
 class people::am::applications {
+
+  class { 
+    'nodejs::global': version => 'v0.10.12'
+  }
+
   include iterm2::dev
   include vagrant
   include java
