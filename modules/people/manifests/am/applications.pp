@@ -3,6 +3,12 @@ class people::am::applications {
   class { 
     'nodejs::global': version => 'v0.10.12'
   }
+  nodejs::module {
+    'bower': node_version => 'v0.10.12'
+  }
+  nodejs::module {
+    'docpad': node_version => 'v0.10.12' 
+  }
 
   include iterm2::dev
   include vagrant
