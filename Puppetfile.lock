@@ -89,6 +89,11 @@ GITHUBTARBALL
     java (1.0.6)
 
 GITHUBTARBALL
+  remote: boxen/puppet-linkinus
+  specs:
+    linkinus (1.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-mou
   specs:
     mou (1.0.0)
@@ -248,6 +253,7 @@ DEPENDENCIES
   intellij (= 1.2.0)
   iterm2 (= 1.0.2)
   java (= 1.0.6)
+  linkinus (= 1.0.2)
   mou (= 1.0.0)
   nginx (= 1.4.0)
   nodejs (= 3.2.5)

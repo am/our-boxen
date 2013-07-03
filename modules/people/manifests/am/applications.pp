@@ -42,5 +42,6 @@ class people::am::applications {
   include virtualbox
   include sourcetree
   include archiver
+  include linkinus
 
 }
