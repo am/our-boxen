@@ -9,6 +9,9 @@ class people::am::applications {
   nodejs::module {
     'docpad': node_version => 'v0.10.12' 
   }
+  nodejs::module {
+    'grunt-cli': node_version => 'v0.10.12' 
+  }
 
   include iterm2::dev
   include vagrant
