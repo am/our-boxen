@@ -151,7 +151,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-sublime_text_2
   specs:
-    sublime_text_2 (1.1.1)
+    sublime_text_2 (1.1.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-sudo
@@ -269,7 +269,7 @@ DEPENDENCIES
   slate (= 1.0.0)
   sourcetree (= 0.0.2)
   stdlib (= 4.1.0)
-  sublime_text_2 (= 1.1.1)
+  sublime_text_2 (= 1.1.2)
   sudo (= 1.0.0)
   teamviewer (= 1.0.1)
   tower (= 0.0.1)
