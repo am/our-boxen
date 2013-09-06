@@ -5,6 +5,7 @@ class people::am {
   include people::am::repositories
   include people::am::config
   include people::am::vm
+  include people::am::projects
 
   include zsh
   

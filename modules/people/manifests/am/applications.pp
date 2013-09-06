@@ -1,16 +1,18 @@
 class people::am::applications {
 
+  $nodejs_v = 'v0.10.12'
+  
   class { 
-    'nodejs::global': version => 'v0.10.12'
+    'nodejs::global': version => $nodejs_v
   }
   nodejs::module {
-    'bower': node_version => 'v0.10.12'
+    'bower': node_version => $nodejs_v
   }
   nodejs::module {
-    'docpad': node_version => 'v0.10.12' 
+    'docpad': node_version => $nodejs_v 
   }
   nodejs::module {
-    'grunt-cli': node_version => 'v0.10.12' 
+    'grunt-cli': node_version => $nodejs_v 
   }
 
   include iterm2::dev

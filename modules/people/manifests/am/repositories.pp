@@ -25,6 +25,10 @@ class people::am::repositories (
     value => 'antsmiranda@gmail.com',
   }
 
+  git::config::global{ 'core.editor':
+    value => 'vim',
+  }
+
   git::config::global{ 'color.ui':
     value => 'true',
   }
