@@ -99,6 +99,11 @@ GITHUBTARBALL
     linkinus (1.0.2)
 
 GITHUBTARBALL
+  remote: boxen/puppet-mongodb
+  specs:
+    mongodb (0.2.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-mou
   specs:
     mou (1.0.0)
@@ -270,6 +275,7 @@ DEPENDENCIES
   iterm2 (= 1.0.2)
   java (= 1.0.6)
   linkinus (= 1.0.2)
+  mongodb (= 0.2.1)
   mou (= 1.0.0)
   nginx (= 1.4.2)
   nodejs (= 3.2.9)

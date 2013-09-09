@@ -16,4 +16,7 @@ class people::am::params {
     ruby    => $rb_global_version,
     version => '~> 3.0.20'
   }
+
+  # mongodb
+  include mongodb
 }

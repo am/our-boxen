@@ -42,6 +42,7 @@ github "java",                "1.0.6"
 github "zsh",                 "1.0.0"
 github "property_list_key",   "0.1.0", :repo => "glarizza/puppet-property_list_key"
 github "vim",                 "1.0.3"
+github "mongodb",             "0.2.1"
 
 # apps
 github "alfred",              "1.1.1"
