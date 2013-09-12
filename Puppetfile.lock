@@ -109,6 +109,11 @@ GITHUBTARBALL
     mou (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-mysql
+  specs:
+    mysql (1.1.5)
+
+GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
     nginx (1.4.2)
@@ -277,6 +282,7 @@ DEPENDENCIES
   linkinus (= 1.0.2)
   mongodb (= 0.2.1)
   mou (= 1.0.0)
+  mysql (= 1.1.5)
   nginx (= 1.4.2)
   nodejs (= 3.2.9)
   openssl (= 1.0.0)
