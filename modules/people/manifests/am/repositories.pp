@@ -71,6 +71,18 @@ class people::am::repositories (
     provider => 'git';
   }
 
+  #vim Vundle
+  repository { "${my_sourcedir}/vundle":
+    source  => 'gmarik/vundle',
+    provider => 'git';
+  }
+
+  file { "/Users/${my_username}/.vim/bundle/vundle":
+    ensure  => link,
+    target  => "${my_sourcedir}/vundle",
+    require => Repository["${my_sourcedir}/vundle"],
+  }
+
   # create colors folder
   file { "/Users/${my_username}/.vim/colors":
       ensure => "directory",
@@ -122,6 +134,13 @@ class people::am::repositories (
     ensure  => link,
     mode    => '0644',
     target  => "${my_sourcedir}/dotfiles/.slate.js",
+    require => Repository["${my_sourcedir}/dotfiles"],
+  }
+
+  file { "/Users/${my_username}/.bundle/config":
+    ensure  => link,
+    mode    => '0644',
+    target  => "${my_sourcedir}/dotfiles/.bundle/config",
     require => Repository["${my_sourcedir}/dotfiles"],
   }
 }

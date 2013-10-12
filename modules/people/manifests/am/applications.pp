@@ -36,7 +36,7 @@ class people::am::applications {
   include chrome
   include firefox
 
-  include sublime_text_2
+  include sublime_text_3
   class { 'intellij':
     edition => 'ultimate',
   }
@@ -49,4 +49,5 @@ class people::am::applications {
   include archiver
   include linkinus
 
+  include tower
 }
