@@ -123,6 +123,13 @@ class people::am::repositories (
     require => Repository["${my_sourcedir}/dotfiles"],
   }
 
+  file { "/Users/${my_username}/.oh-my-zsh/themes/sunrise-am.zsh-theme":
+    ensure  => link,
+    mode    => '0644',
+    target  => "${my_sourcedir}/dotfiles/sunrise-am.zsh-theme",
+    require => Repository["${my_sourcedir}/dotfiles"],
+  }
+
   file { "/Users/${my_username}/.slate":
     ensure  => link,
     mode    => '0644',
