@@ -85,7 +85,7 @@ class people::am::repositories (
 
   # create colors folder
   file { "/Users/${my_username}/.vim/colors":
-      ensure => "directory",
+    ensure => "directory",
   }
 
   file { "/Users/${my_username}/.vim/colors/Tomorrow-Night.vim":
@@ -137,10 +137,15 @@ class people::am::repositories (
     require => Repository["${my_sourcedir}/dotfiles"],
   }
 
+  file { "/Users/${my_username}/.bundle":
+    ensure => directory,
+    require => Repository["${my_sourcedir}/dotfiles"],
+  }
+
   file { "/Users/${my_username}/.bundle/config":
     ensure  => link,
     mode    => '0644',
     target  => "${my_sourcedir}/dotfiles/.bundle/config",
-    require => Repository["${my_sourcedir}/dotfiles"],
+    require => File["/Users/${my_username}/.bundle"],
   }
 }
