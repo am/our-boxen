@@ -18,7 +18,8 @@ class people::am::applications {
   include iterm2::dev
   include vagrant
   include java
-  include vim
+  # https://github.com/boxen/puppet-vim/issues/16
+  # include vim
   include autojump
 
   include alfred

@@ -116,7 +116,7 @@ class people::am::repositories (
 
   file { "/Users/${my_username}/.oh-my-zsh/custom":
     ensure  => link,
-    force   => true,     
+    force   => true,
     replace => true,
     mode    => '0644',
     target  => "${my_sourcedir}/dotfiles/.oh-my-zsh",
