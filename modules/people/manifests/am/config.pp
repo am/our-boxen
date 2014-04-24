@@ -8,15 +8,9 @@ class people::am::config (
   # Config Settings #
   ###################
 
-  # NOTE: Dock prefs only take effect when you restart the dock
-  #property_list_key { 'Hide the dock':
-  #  ensure     => present,
-  #  path       => "${my_homedir}/Library/Preferences/com.apple.dock.plist",
-  #  key        => 'autohide',
-  #  value      => true,
-  #  value_type => 'boolean',
-  #  notify     => Exec['Restart the Dock'],
-  #}
+  include osx::finder::unhide_library
+  include osx::universal_access::ctrl_mod_zoom
+  include osx::dock::autohide
 
   exec { 'Restart the Dock':
     command     => '/usr/bin/killall -HUP Dock',
@@ -79,12 +73,6 @@ class people::am::config (
   # Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
   exec { "finder_list_view":
     command => 'defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"',
-    path    => "/usr/bin/",
-  }
-
-  # Show the ~/Library folder
-  exec { "finder_show_library":
-    command => 'chflags nohidden ~/Library',
     path    => "/usr/bin/",
   }
 

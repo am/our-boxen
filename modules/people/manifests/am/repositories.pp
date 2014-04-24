@@ -84,7 +84,10 @@ class people::am::repositories (
   }
 
   # create colors folder
-  file { "/Users/${my_username}/.vim/colors":
+  file { [
+    "/Users/${my_username}/.vim", 
+    "/Users/${my_username}/.vim/colors",
+    "/Users/${my_username}/.vim/bundle"]:
     ensure => "directory",
   }
 
@@ -154,5 +157,12 @@ class people::am::repositories (
     mode    => '0644',
     target  => "${my_sourcedir}/dotfiles/.bundle/config",
     require => File["/Users/${my_username}/.bundle"],
+  }
+
+  file { "/Users/${my_username}/.tmux.conf":
+    ensure  => link,
+    mode    => '0644',
+    target  => "${my_sourcedir}/dotfiles/tmux.conf",
+    require => Repository["${my_sourcedir}/dotfiles"],
   }
 }
