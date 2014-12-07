@@ -3,7 +3,4 @@ class people::am::params {
   $my_username  = $::luser
   $my_homedir   = "/Users/${people::am::params::my_username}"
   $my_sourcedir = $::boxen_srcdir
-
-  # mongodb
-  # include mongodb
 }
